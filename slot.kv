@@ -1,0 +1,35 @@
+#:kivy 2.1.0
+
+<SlotGame>:
+    canvas:
+        Rectangle:
+            id: slot_machine
+            source: "assets/slot-machine4.png"
+            pos: 0,self.height/2
+            size: self.width, self.height/2
+
+        Rectangle:
+            id: slot_lever
+            source: "assets/slot-machine2.png"
+            pos: 0, self.height/2
+            size: self.width, self.height/2
+    
+        Rectangle:
+            id: slotOne
+            source: "assets/icons/apple.png"
+            pos: self.width * 4/9, self.height * 2/3
+            size: self.width * 1/8 ,self.height * 1/8
+        
+        Rectangle:
+            id: slotTwo
+            source: "assets/icons/bell.png"
+            pos: self.width * 0.285, self.height * 2/3
+            size: self.width * 1/8, self.height *1/8
+
+        Rectangle:
+            id: slotThree
+            source: "assets/icons/ruby.png"
+            pos: self.width * 0.603, self.height * 2/3
+            size: self.width * 1/8, self.height *1/8
+        
+        
